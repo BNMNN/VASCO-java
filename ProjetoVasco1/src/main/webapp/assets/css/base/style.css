@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+
+@import url(./global.css);
+@import url(../cabecalho.css);
+@import url(../sub-header.css);
+@import url(../destaque.css);
+@import url(../noticias.css);
+@import url(../vascotv.css);
+@import url(../lema.css);
+@import url(../footer.css);
+@import url(../estilo.css);
+@import url(../cadastro.css);
+
+header a{
+	color : black;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	font-size : 20px;
+	margin-left: 10px;
+	margin-right:5px;
+}
+
+header a:hover{
+	color: darkred;
+}

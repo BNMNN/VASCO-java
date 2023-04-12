@@ -1,0 +1,151 @@
+@charset "ISO-8859-1";
+
+body {
+    margin: 0;
+    background-image: url(../vasco.png);
+    background-size: cover; 
+    background-position: center;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+
+.main-signup {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.right-signup {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-signup {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: black;
+    border-radius: 30px;
+}
+
+.card-signup h1 {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+}
+/* Usando o flex-direction, o align fica embaixo eixo x, e o justify em cima eixo y */
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: white;
+    color: black;
+    font-size: 14pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield input::placeholder {
+    color: black;
+}
+
+.btn-signup {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: black;
+    background: white;
+    cursor: pointer;
+}
+
+.card-signup p{
+    color: white;
+}
+
+.card-signup a{
+    text-decoration: none;
+    color: darkred;
+}
+
+.btn-signup:hover {
+    background: gray;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-signup{
+        width: 85%
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-signup {
+        flex-direction: column;
+    }
+    .left-signup h1 {
+        display: none;
+    }
+
+    .left-signup {
+        width: 100%;
+        height: auto;
+    }
+    .right-signup {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-signup-image {
+        width: 50vw;
+    }
+
+    .card-signup {
+        width: 90%;
+    }
+
+    .textfield label {
+        font-size: 12pt;
+    }
+
+    .textfield input {
+        font-size: 11pt;
+    }
+
+    .textfield input::placeholder {
+        font-size: 10.2pt;
+    }
+}
+

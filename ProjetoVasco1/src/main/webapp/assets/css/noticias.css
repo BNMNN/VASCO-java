@@ -1,0 +1,108 @@
+@charset "ISO-8859-1";
+
+.noticias{
+  width: 100%;
+  background-color: #EAEAE8;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noticias__banner{
+  width: 95%;
+  margin-bottom: 60px;
+}
+
+.noticias__card{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.noticias__card .card{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  transition: .3s;
+}
+
+.noticias__card .card:hover{
+  opacity: .8;
+}
+
+.noticias__card .card p{
+  padding: 15px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.noticias__card .card span{
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--laranja);
+}
+
+.noticias__tabela{
+  width: 25%;
+}
+
+.noticias__tabela-titulo{
+  background: linear-gradient(to right, #EA5F33, #E41B2D);
+  color: #fff;
+  width: 100%;
+  text-align: left;
+}
+
+.noticias__tabela-titulo th{
+  padding: 10px 80px 10px 20px;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.noticias__tabela-classificacao td{
+  background-color: #fff;
+  padding: 15px;
+}
+
+.clasificacao-vasco td{
+  font-weight: bold;
+}
+
+.noticias__link{
+  margin-top: 30px;
+  background: linear-gradient(to right, #EA5F33, #E41B2D);
+  border-radius: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 50px;
+  transition: all .2s;
+}
+
+.noticias__link:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width:1024px){
+  .noticias__card{
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:768px){
+  .noticias__card{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .noticias__card .card, .noticias__tabela{
+    width: 90%;
+  }
+}

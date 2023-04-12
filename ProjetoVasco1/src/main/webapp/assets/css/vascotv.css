@@ -1,0 +1,56 @@
+@charset "ISO-8859-1";
+
+.vasco-tv{
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vasco-tv img{
+padding: 50px 0 50px;
+}
+
+.vasco-tv__incricao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  padding-bottom: 120px;
+}
+
+.vasco-tv__incricao h3{
+  font-size: 23px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.vasco-tv__incricao a{
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(to right, #EA5F33, #E41B2D);
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all .2s;
+  border-radius: 8px;
+}
+
+.vasco-tv__incricao a:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width:768px){
+  .vasco-tv__incricao{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .vasco-tv__incricao h3{
+    text-align: center;
+  }
+}

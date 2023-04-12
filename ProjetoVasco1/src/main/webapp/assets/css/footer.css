@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+}
+
+footer img{
+  width: 250px;
+  margin: 50px;
+}
+
+footer p{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
